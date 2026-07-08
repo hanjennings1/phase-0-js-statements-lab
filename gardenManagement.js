@@ -10,13 +10,11 @@ if (temperature > 80) {
 }
 
 // Garden Lights Control
- if (timeOfDay = "morning") {
+ if (timeOfDay = "evening" || "night") {
+    console.log("Lights on")
+ } else {
     console.log("Lights off")
-} else if (timeOfDay = "night") {
-    console.log("Lights on")
-} else if (timeOfDay = "evening") {
-    console.log("Lights on")
-}
+ }
 
 // Soil Moisture Adjustment
 while(soilMoisture<=40) {
