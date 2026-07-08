@@ -1,3 +1,25 @@
 const temperature = 90;
-const timeOfDay = "morning";
+let timeOfDay = "morning";
 let soilMoisture = 30;
+
+// Watering Control
+if (temperature > 80) {
+        console.log("Watering on");
+} else {
+    console.log ("Watering off")
+}
+
+// Garden Lights Control
+ if (timeOfDay = "morning") {
+    console.log("Lights off")
+} else if (timeOfDay = "night") {
+    console.log("Lights on")
+} else if (timeOfDay = "evening") {
+    console.log("Lights on")
+}
+
+// Soil Moisture Adjustment
+while(soilMoisture<=40) {
+    console.log(soilMoisture);
+    soilMoisture += 5
+}
